@@ -39,7 +39,8 @@ def results():
     #     print(result.media_url)
     #     print(result.url)
 
-app.run(debug=True)
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
 
 ####################################################################
 ###### Go to pages on canvas for necessary changes #################
